@@ -13,6 +13,7 @@
     src: url("assets/fonts/ProductSans-Bold.ttf");
   }
   
+
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
