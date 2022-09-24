@@ -323,7 +323,7 @@
     transform: translateX(-48%);
   }
   
-  /*        Domains that we rain        */
+  /*        Domains that we rain       */
   
   .Web,
   .App,
@@ -338,7 +338,7 @@
     display: none;
   }
 
-  
+
   .slide-container {
     max-width: 100vw;
     display: flex;
