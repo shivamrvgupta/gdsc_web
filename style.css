@@ -796,6 +796,7 @@
     transition: transform 500ms ease;
   }
 
+  
   .domain-card{
     width: 150px !important;
     height: 210px !important;
@@ -805,6 +806,7 @@
     width: 150px !important;
     height: 250px !important;
   }
+ 
   .carousel-wrapper .carousel .carousel-cell .more {
     display: block;
     opacity: 0;
@@ -841,7 +843,7 @@
   }
   .carousel-cell {
     border: 1px rgb(161, 161, 161) solid;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
   @media screen and (max-width: 700px) {
@@ -870,6 +872,51 @@
       height: 120%;
     }
   }
+
+  .card{
+    border-radius: 20px;
+  }
+  .card:hover{
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+  }
+  .domain-card:hover{ 
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: all 1.0s ease;
+  }
+  .event-card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    transition: all 1.0s ease;
+  }
+  .backg{
+    min-height: 55vh;
+    width: 45%;
+    background-position: left;
+    background-size: cover;
+    position: relative;
+    animation: slide 10s infinite;
+  }
+  @keyframes slide{
+    0%,100%{
+        background-image: url(assets/images/GDSCwow.png);
+    }
+    25%{
+        background-image: url(assets/images/GDSCmeet.png);
+    }
+    50%{
+        background-image: url(assets/images/3team.png);
+    }
+    75%{
+        background-image: url(assets/images/image-removebg-preview.png);
+    }
+}
+ 
+
 
 
   
