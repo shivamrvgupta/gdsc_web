@@ -1336,22 +1336,29 @@
                 </div>
                 <div class="col-12 col-md-6 my-2">
                     <h4>
-                        Copyrights 2021 <strong>GDSC SIESGST</strong> | Developed with ❤ by Web Dev Team
+                        Copyrights <span class="year"></span> <strong>GDSC SIESGST</strong> | Developed with ❤ by Web Dev Team
                         DSC SIESGST
                     </h4>
                 </div>
             </div>
         </div>
     </footer>
-            <!-- Loader -->
-            <script>
-                var loader = document.getElementById("preloader");
-                window.addEventListener("load", function(){
-                    loader.style.display = "none";
-                    load.style.fade = "slow";
-                });
-    
-            </script>
+    <!-- Loader -->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+            load.style.fade = "slow";
+        });
+
+    </script>
+
+    <!-- JS query for Copyright Year Get Updated automatically -->
+    <script>
+        const date = new Date();
+        document.querySelector('.year').innerHTML = date.getFullYear();
+    </script>
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
