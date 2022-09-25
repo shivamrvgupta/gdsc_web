@@ -12,8 +12,10 @@
     font-family: "Google-Sans-bold";
     src: url("assets/fonts/ProductSans-Bold.ttf");
   }
-  
-
+  /* .dark-mode {
+    background-color: black;
+    color: white;
+  } */
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -895,6 +897,7 @@
     cursor: pointer;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     transition: all 1.0s ease;
+<<<<<<< HEAD
   }
   .backg{
     min-height: 55vh;
@@ -923,3 +926,6 @@
 
 
   
+=======
+  } 
+>>>>>>> 473522a (made animations)

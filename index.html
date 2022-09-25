@@ -97,6 +97,9 @@
                         <li class="nav-item">
                             <a class="nav-link active nav5" href="#contact" style="margin-right: 20px">Contact Us</a>
                         </li>
+                            <!-- <li class="nav-item">
+                                <button onclick="myFunction()">Toggle dark mode</button>   
+                            </li> -->
                     </ul>
                 </div>
         </div>
@@ -105,7 +108,7 @@
     <!---------------------starting of header--------------------->
     <div class="container" id="home">
         <div class="row header pt-4">
-            <div class="col-lg-6 text-center leftheader mb-3" style="height: 300px">
+            <div class="col-lg-6 col-sm-12 text-center leftheader mb-3" style="height: 300px">
                 <img src="./assets/images/dsc_logo.png" style="height: 80%" alt="" />
                 <h2>
                     Developer Students Club<br />
@@ -115,9 +118,12 @@
                 <a href="https://bit.ly/GDSCSIESGSTCommunityPage" target="_blank" class="button">Join Us</a>
 
             </div>
+<<<<<<< HEAD
             <div class="backg col-lg-6 col-sm-12 mb-sm-5 rightheader">
             </div>
         </div>
+=======
+>>>>>>> 473522a (made animations)
         </div>
     </div>
 
@@ -1343,6 +1349,13 @@
             </div>
         </div>
     </footer>
+    <!-- Dark-mode -->
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+         }
+    </script>   
     <!-- Loader -->
     <script>
         var loader = document.getElementById("preloader");
