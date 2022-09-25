@@ -897,35 +897,50 @@
     cursor: pointer;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     transition: all 1.0s ease;
-<<<<<<< HEAD
   }
-  .backg{
-    min-height: 55vh;
-    margin-top: 10%;
-    background-position: left;
+  .backg-box{
+    margin-top: 20px;
+    height: 38%;
+    width: 40%;
+    padding-left: 20px;
+    padding-bottom: 20px;
     background-size: cover;
     position: relative;
-    animation: slide 10s infinite;
+    transform: translate(8%,11%);
+    overflow: hidden;
+  }
+  .backg-img{
+    width: 100%;
+    background: solid;
+      display: flex;
+      animation: slide 16s infinite;
+  }
+  .backg-img img{
+    width: 100%;
   }
   @keyframes slide{
-    0%,100%{
-        background-image: url(assets/images/GDSCwow.png);
+    0%{
+        transform: translateX(-0);
     }
     25%{
-        background-image: url(assets/images/GDSCmeet.png);
+        transform: translateX(-0);
+    }
+    30%{
+        transform: translateX(-100%);
     }
     50%{
-        background-image: url(assets/images/3team.png);
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
     }
     75%{
-        background-image: url(assets/images/image-removebg-preview.png);
+        transform: translateX(-200%);
     }
-}
- 
-
-
-
-  
-=======
-  } 
->>>>>>> 473522a (made animations)
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+  }
