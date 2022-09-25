@@ -858,6 +858,9 @@
     .rightheader {
       display: none;
     }
+    .youtube{
+      margin-top: 5rem;
+    }
     .about {
       margin-top: -10rem;
     }
