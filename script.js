@@ -1,3 +1,8 @@
+// For popovers
+$(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
 
 //for our team section
 
