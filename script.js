@@ -6,7 +6,7 @@ $(function () {
 
 //for our team section
 
-const btns = document.querySelectorAll('.btns');
+const btns = document.querySelectorAll('.btn');
 const storeProducts = document.querySelectorAll('.store-product');
 
 for (i = 0; i < btns.length; i++) {

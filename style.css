@@ -195,7 +195,7 @@
     border-radius: 2.2rem !important;
   }
 
-  .btns {
+  .btn {
     background-color: #4285f4;
     color: whitesmoke;
     width: 150px;
@@ -203,8 +203,8 @@
     cursor: pointer;
   }
   
-  .btns:hover,
-  .btns:focus {
+  .btn:hover,
+  .btn:focus {
     background-color: rgb(84, 84, 224);
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
