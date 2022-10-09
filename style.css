@@ -12,8 +12,10 @@
     font-family: "Google-Sans-bold";
     src: url("assets/fonts/ProductSans-Bold.ttf");
   }
-  
-
+  /* .dark-mode {
+    background-color: black;
+    color: white;
+  } */
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -184,7 +186,16 @@
     color: #fff;
   }
   
-  .btn {
+  .btn-sm{
+    margin-left: 4.68rem;
+    margin-bottom: 5px;    
+    padding: 0.25rem 0.5rem !important;
+    font-size: .7rem !important;
+    line-height: 1 !important;
+    border-radius: 2.2rem !important;
+  }
+
+  .btns {
     background-color: #4285f4;
     color: whitesmoke;
     width: 150px;
@@ -192,8 +203,8 @@
     cursor: pointer;
   }
   
-  .btn:hover,
-  .btn:focus {
+  .btns:hover,
+  .btns:focus {
     background-color: rgb(84, 84, 224);
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
     transform: translateY(-0.25em);
@@ -335,7 +346,9 @@
   .Cybersecurity,
   .Content,
   .Programming,
-  .Ar {
+  .Ar,
+  .Current,
+  .Past {
     display: none;
   }
 
@@ -804,7 +817,7 @@
 
   .event-card{
     width: 150px !important;
-    height: 250px !important;
+    height: 280px !important;
   }
  
   .carousel-wrapper .carousel .carousel-cell .more {
@@ -858,6 +871,9 @@
     .rightheader {
       display: none;
     }
+    .youtube{
+      margin-top: 5rem;
+    }
     .about {
       margin-top: -10rem;
     }
@@ -893,30 +909,60 @@
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     transition: all 1.0s ease;
   }
-  .backg{
-    min-height: 55vh;
-    width: 45%;
-    background-position: left;
+  .backg-box{
+    margin-top: 20px;
+    height: 38%;
+    width: 40%;
+    padding-left: 20px;
+    padding-bottom: 20px;
     background-size: cover;
     position: relative;
-    animation: slide 10s infinite;
+    transform: translate(8%,11%);
+    overflow: hidden;
+  }
+  .backg-img{
+    width: 100%;
+    background: solid;
+      display: flex;
+      animation: slide 16s infinite;
+  }
+  .backg-img img{
+    width: 100%;
   }
   @keyframes slide{
-    0%,100%{
-        background-image: url(assets/images/GDSCwow.png);
+    0%{
+        transform: translateX(-0);
     }
     25%{
-        background-image: url(assets/images/GDSCmeet.png);
+        transform: translateX(-0);
+    }
+    30%{
+        transform: translateX(-100%);
     }
     50%{
-        background-image: url(assets/images/3team.png);
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
     }
     75%{
-        background-image: url(assets/images/image-removebg-preview.png);
+        transform: translateX(-200%);
     }
-}
- 
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+  }
 
-
-
-  
+  .popover-header {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    font-family: var(--bs-font-sans-serif);  
+    padding: 0.5rem 0.75rem;
+    color: #212529;
+    background: #fff;
+  }
